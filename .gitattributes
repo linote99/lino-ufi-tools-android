@@ -1,0 +1,7 @@
+# Bundled scrcpy-server is checked against a fixed size/SHA-256: keep it byte-identical.
+app/src/main/assets/** binary
+*.sh text eol=lf
+*.py text eol=lf
+*.java text eol=lf
+*.png binary
+*.jar binary
