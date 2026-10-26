@@ -56,7 +56,6 @@ UFI-TOOLS 本体开源地址：https://github.com/kanoqwq/UFI-TOOLS（作者 Min
 
 ```bash
 ./build.sh            # 产物：dist/Lino-UFI-Tools-Android-<版本>.apk 和 .sha256（1.0.x 叫 UFI-TOOLS-Installer-Android）
-test/run-tests.sh     # 离线测试：本机模拟后台与下载源（需 test/json.jar），以及模拟 adbd + 假 scrcpy 服务端（需 python3-cryptography）
 ```
 
 版本号只在 `version.properties` 里改，同时更新 `CHANGELOG.md`。
@@ -71,10 +70,6 @@ Windows 上请在 WSL 或 Git Bash 中运行 `build.sh`（需要 bash、JDK 和 
 
 - 系统版本过高时官方禁用了 ADB（F50 需 B15 以下，U30 亚太需 B19 以下，U30 普通版需 B25 以下，V50 需 B21 以下），这一点和电脑版一样无法绕过。
 - 不支持 Android 11+ 的「无线调试」配对端口（TLS），只支持经典 5555 无线 ADB 和 USB 调试。
-
-## 测试状态
-
-离线测试（`test/run-tests.sh`）覆盖后台登录与请求签名、下载源列表与下载、ADB 拉取文件、多路流以及 scrcpy 协议（用本机模拟服务，不连接设备或服务器）。使用中遇到问题，欢迎在 Issues 里反馈手机型号、随身 WiFi 型号和固件版本。
 
 ## 许可证
 
